@@ -179,7 +179,7 @@ class Task extends Component{
 
           return (
             <Container
-              innerRef={provided.innerRef}
+              ref={provided.innerRef}
               {...provided.draggableProps}
               {...provided.dragHandleProps}
               onClick={this.onClick}
