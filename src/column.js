@@ -57,7 +57,7 @@ class Column extends Component {
         <Droppable droppableId={column.id}>
           {(provided, snapshot) => (
             <TaskList
-              innerRef={provided.innerRef}
+              ref={provided.innerRef}
               isDraggingOver={snapshot.isDraggingOver}
               {...provided.droppableProps}
             >
